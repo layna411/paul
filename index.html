@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAUL CHINNU — Digital Marketer • Graphic Designer • Video Editor</title>
+  <meta name="description" content="Official portfolio of Paul Chinnu, Digital Marketing Executive & Creative Specialist specializing in Google Ads, Meta Ads, Video Editing, Graphic Design, and Brand Growth." />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="grid-bg-overlay"></div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+         PAUL CHINNU <span>J</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#campaigns" class="nav-link">Campaigns</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#work" class="mobile-nav-link">Work</a>
+    <a href="#campaigns" class="mobile-nav-link">Campaigns</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#contact" class="nav-cta" style="margin-top: 20px; text-align: center;">Let's Talk</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="bg-hero-text">PAUL CHINNU </div>
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <span class="hero-pill">DIGITAL MARKETING</span>
+            <span class="hero-pill">GRAPHIC DESIGN</span>
+            <span class="hero-pill">VIDEO EDITING</span>
+            <span class="hero-pill">PERFORMANCE MARKETING</span>
+            <span class="hero-pill">BRANDING</span>
+          </div>
+
+          <h1 class="hero-name">PAUL CHINNU </h1>
+          <h2 class="hero-title">DIGITAL MARKETER</h2>
+          <p class="hero-subtext">
+            I build brands, campaigns and digital experiences that get noticed.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#work" class="btn-primary">
+              View My Work <i data-lucide="arrow-down-right"></i>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              Let's Work Together <i data-lucide="send"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Image -->
+        <div class="hero-image-wrapper">
+          <div class="hero-glow-bg"></div>
+          <div class="hero-img-card">
+            <img src="public/assets/paul-hero.jpg" alt="Paul Chinnu Illustration Hero Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#about" class="scroll-indicator">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </a>
+  </section>
+
+  <!-- ABOUT SECTION (SCREENSHOT 1 EXACT DESIGN) -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-tag">01 — About</div>
+      <h2 class="section-title">Profile</h2>
+
+      <div class="about-grid">
+        <!-- Left Column Bio & Languages -->
+        <div class="about-text">
+          <p>
+            Creative and results-driven Digital Marketing Executive at SIMATS University, with hands-on expertise in paid advertising, branding, and digital growth strategies. Comfortable across the full stack of a marketing campaign — from graphic design and video editing through to lead generation and performance analytics.
+          </p>
+          <p>
+            Background in Electrical & Electronics Engineering brings a structured, analytical approach to campaign planning, while a design and editing skill set keeps creative output sharp and on-brand.
+          </p>
+
+          <!-- Languages Sub-block -->
+          <div class="about-languages">
+            <h4 class="lang-title">LANGUAGES</h4>
+            
+            <div class="lang-item">
+              <div class="lang-header">
+                <span>Tamil</span>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-bar">
+                <div class="lang-progress" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="lang-item">
+              <div class="lang-header">
+                <span>English</span>
+                <span class="lang-level">Professional</span>
+              </div>
+              <div class="lang-bar">
+                <div class="lang-progress" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Minimal 2x2 Meta Grid (Matching Screenshot 1) -->
+        <div class="about-meta-container">
+          <div class="meta-divider"></div>
+          <div class="about-meta-2col">
+            <div class="meta-entry">
+              <span class="meta-label">CURRENT ROLE</span>
+              <h3 class="meta-value">Digital Marketing Executive, SIMATS University</h3>
+            </div>
+
+            <div class="meta-entry">
+              <span class="meta-label">BASED IN</span>
+              <h3 class="meta-value">Thiruvallur, Tamil Nadu</h3>
+            </div>
+
+            <div class="meta-entry">
+              <span class="meta-label">EDUCATION</span>
+              <h3 class="meta-value">B.E, Electrical & Electronics — Anna University</h3>
+            </div>
+
+            <div class="meta-entry">
+              <span class="meta-label">FOCUS AREAS</span>
+              <h3 class="meta-value">Paid Ads • Branding • Video & Graphics</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION (UPDATED EXACTLY FROM SCREENSHOT) -->
+  <section id="skills" class="section-padding" style="background: rgba(10, 10, 14, 0.4);">
+    <div class="container">
+      <div class="section-tag">02 — Skills</div>
+      <h2 class="section-title">What I work with</h2>
+      <p class="section-subtitle">A blend of creative production and performance marketing, applied end to end on live campaigns.</p>
+
+      <div class="skills-banner-grid">
+        <div class="skill-banner-card">
+          <span class="skill-cat-tag">CREATIVE</span>
+          <h3 class="skill-banner-title">Graphic Design</h3>
+        </div>
+
+        <div class="skill-banner-card">
+          <span class="skill-cat-tag">CREATIVE</span>
+          <h3 class="skill-banner-title">Photography</h3>
+        </div>
+
+        <div class="skill-banner-card">
+          <span class="skill-cat-tag">CREATIVE</span>
+          <h3 class="skill-banner-title">Video Editing</h3>
+        </div>
+
+        <div class="skill-banner-card">
+          <span class="skill-cat-tag">PAID MEDIA</span>
+          <h3 class="skill-banner-title">Google Ads</h3>
+        </div>
+
+        <div class="skill-banner-card">
+          <span class="skill-cat-tag">PAID MEDIA</span>
+          <h3 class="skill-banner-title">Meta Ads</h3>
+        </div>
+
+        <div class="skill-banner-card">
+          <span class="skill-cat-tag">GROWTH</span>
+          <h3 class="skill-banner-title">Lead Generation</h3>
+        </div>
+
+        <div class="skill-banner-card">
+          <span class="skill-cat-tag">GROWTH</span>
+          <h3 class="skill-banner-title">Campaign Optimization</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="briefcase"></i> Journey</div>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-subtitle">Demonstrated record in managing live campaigns and institutional digital marketing.</p>
+
+      <div class="timeline">
+        <!-- SIMATS University -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 – Present</span>
+            <h3 class="timeline-role">Digital Marketing Executive</h3>
+            <div class="timeline-company">SIMATS University</div>
+            <ul class="timeline-list">
+              <li>Managing and optimizing Google Ads & Meta Ads campaigns</li>
+              <li>Creating high-quality promotional videos and graphics</li>
+              <li>Handling social media branding and strategy</li>
+              <li>Executing WhatsApp and Email marketing campaigns</li>
+              <li>Lead generation and performance analytics tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Whytap Institute -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Apr 2022 – Jun 2023</span>
+            <h3 class="timeline-role">Digital Marketing (Intent)</h3>
+            <div class="timeline-company">Whytap Institute</div>
+            <ul class="timeline-list">
+              <li>Worked on live digital marketing projects</li>
+              <li>SEO optimization and search ranking growth</li>
+              <li>Social media management & content publishing</li>
+              <li>Executing paid digital ad campaigns</li>
+              <li>Created and managed custom WordPress websites</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section-padding" style="background: rgba(10, 10, 14, 0.4);">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="layers"></i> Solutions</div>
+      <h2 class="section-title">Core Services</h2>
+      <p class="section-subtitle">End-to-end digital marketing and creative capabilities designed to elevate brand presence.</p>
+
+      <div class="services-grid">
+        <!-- 01: Digital Marketing -->
+        <div class="service-card" data-title="Digital Marketing" data-category="01" data-desc="Complete digital strategy covering audience research, campaign execution, and multi-channel marketing integration.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/service-marketing.jpg" alt="Digital Marketing Service Visual" class="service-img" />
+            <span class="service-num">01</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-sub">Multi-channel strategy & digital presence growth.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 02: Google Ads -->
+        <div class="service-card" data-title="Google Ads" data-category="02" data-desc="Search, Display, & Video ad campaigns built for high ROI and targeted customer acquisition.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/service-marketing.jpg" alt="Google Ads Service Visual" class="service-img" />
+            <span class="service-num">02</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Google Ads</h3>
+            <p class="service-sub">Precision search & video ad campaign management.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 03: Meta Ads -->
+        <div class="service-card" data-title="Meta Ads" data-category="03" data-desc="Facebook & Instagram paid campaigns tailored for brand awareness, engagement, and direct conversions.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/work-ad.jpg" alt="Meta Ads Service Visual" class="service-img" />
+            <span class="service-num">03</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Meta Ads</h3>
+            <p class="service-sub">Facebook & Instagram ad funnel optimization.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 04: Social Media Marketing -->
+        <div class="service-card" data-title="Social Media Marketing" data-category="04" data-desc="Strategic content planning, brand voice development, and organic social community building.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/work-ad.jpg" alt="Social Media Marketing Visual" class="service-img" />
+            <span class="service-num">04</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Social Media Marketing</h3>
+            <p class="service-sub">Organic social strategy & community growth.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 05: Graphic Design -->
+        <div class="service-card" data-title="Graphic Design" data-category="05" data-desc="Eye-catching promotional designs, posters, social media banners, and digital advertising collateral.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/service-branding.jpg" alt="Graphic Design Service Visual" class="service-img" />
+            <span class="service-num">05</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Graphic Design</h3>
+            <p class="service-sub">Promotional graphics & advertising artwork.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 06: Video Editing -->
+        <div class="service-card" data-title="Video Editing" data-category="06" data-desc="High-impact promo reels, short-form ad clips, corporate videos, and motion sound design.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/work-video.jpg" alt="Video Editing Service Visual" class="service-img" />
+            <span class="service-num">06</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Video Editing</h3>
+            <p class="service-sub">Promotional videos, reels & cinematic edits.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 07: Lead Generation -->
+        <div class="service-card" data-title="Lead Generation" data-category="07" data-desc="Strategic lead capture funnels, WhatsApp & Email nurture campaigns targeting high-value prospects.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/service-marketing.jpg" alt="Lead Generation Service Visual" class="service-img" />
+            <span class="service-num">07</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Lead Generation</h3>
+            <p class="service-sub">Targeted acquisition funnels & email/WhatsApp flows.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 08: Branding & Creative Content -->
+        <div class="service-card" data-title="Branding & Creative Content" data-category="08" data-desc="Complete brand identity elements, logo concepts, typography selection, and cohesive visual guidelines.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/service-branding.jpg" alt="Branding & Creative Content Visual" class="service-img" />
+            <span class="service-num">08</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Branding & Creative Content</h3>
+            <p class="service-sub">Brand identity system & creative asset design.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- 09: WordPress Websites -->
+        <div class="service-card" data-title="WordPress Websites" data-category="09" data-desc="Responsive, fast-loading, SEO-friendly custom WordPress websites built for conversion.">
+          <div class="service-img-wrapper">
+            <img src="public/assets/service-marketing.jpg" alt="WordPress Websites Service Visual" class="service-img" />
+            <span class="service-num">09</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">WordPress Websites</h3>
+            <p class="service-sub">Custom, responsive landing pages & portals.</p>
+            <span class="service-explore-btn">Explore Service <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO / WORK SECTION -->
+  <section id="work" class="section-padding">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="layout"></i> Portfolio</div>
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-subtitle">Editorial showcase of marketing campaign assets, graphic designs, and video creative work.</p>
+
+      <!-- Category Filter -->
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="creatives">Social Creatives</button>
+        <button class="filter-btn" data-filter="ads">Digital Ads</button>
+        <button class="filter-btn" data-filter="video">Video Editing</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+
+      <!-- Masonry Gallery -->
+      <div class="portfolio-masonry">
+        <!-- Item 1: Digital Ad Creative -->
+        <div class="portfolio-card" data-category="ads" data-title="Technovate Global Campaign Ad" data-desc="High-impact digital marketing ad poster designed for a tech conference featuring custom 3D geometric visuals and crimson glows.">
+          <img src="public/assets/work-ad.jpg" alt="Technovate Ad Creative" class="portfolio-img" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Digital Advertisements</span>
+            <h3 class="portfolio-title">Technovate Global Campaign</h3>
+            <span class="portfolio-btn">View Project <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 2: Hero Brand Portrait Showcase -->
+        <div class="portfolio-card" data-category="branding" data-title="Paul Chinnu Vector Character Artwork" data-desc="Official vector portrait artwork featuring custom tall typography and crimson color grading created for personal branding.">
+          <img src="public/assets/paul-hero.jpg" alt="Paul Chinnu Brand Art" class="portfolio-img" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Branding & Creative</span>
+            <h3 class="portfolio-title">Paul Chinnu Studio Brand Art</h3>
+            <span class="portfolio-btn">View Project <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 3: Video Editing Suite -->
+        <div class="portfolio-card" data-category="video" data-title="DaVinci Video Edit Timeline" data-desc="Color-graded cinematic reel editing workflow with audio waveform sync and motion graphics overlays.">
+          <img src="public/assets/work-video.jpg" alt="Video Editing Project" class="portfolio-img" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Video Editing Projects</span>
+            <h3 class="portfolio-title">Cinematic Promo Reel Editing</h3>
+            <span class="portfolio-btn">View Project <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 4: Social Media Creative Poster -->
+        <div class="portfolio-card" data-category="creatives" data-title="SIMATS University Event Graphic" data-desc="Promotional social media artwork created for institutional campaigns with dynamic lighting and clean typography.">
+          <img src="public/assets/work-ad.jpg" alt="Social Media Creative" class="portfolio-img" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Social Media Creatives</span>
+            <h3 class="portfolio-title">Institutional Campaign Graphic</h3>
+            <span class="portfolio-btn">View Project <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPAIGN / DIGITAL MARKETING FUNNEL SECTION -->
+  <section id="campaigns" class="section-padding" style="background: rgba(10, 10, 14, 0.4);">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="git-branch"></i> Growth Systems</div>
+      <h2 class="section-title">Campaign Funnel Architecture</h2>
+      <p class="section-subtitle">Strategic mapping of paid search, social advertising, and content engagement ecosystems.</p>
+
+      <div class="funnel-container">
+        <div class="funnel-grid">
+          <!-- Flow 1: Google Ads -->
+          <div class="funnel-card">
+            <div class="funnel-header"><i data-lucide="search"></i> Google Ads Funnel</div>
+            <div class="funnel-steps">
+              <div class="funnel-step"><span>Google Ads Search</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step"><span>Targeted Traffic</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step"><span>Qualified Leads</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step" style="border-left-color: #00ffaa;"><span>Conversion</span></div>
+            </div>
+          </div>
+
+          <!-- Flow 2: Meta Ads -->
+          <div class="funnel-card">
+            <div class="funnel-header"><i data-lucide="share-2"></i> Meta Ads Funnel</div>
+            <div class="funnel-steps">
+              <div class="funnel-step"><span>Meta Ads Creative</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step"><span>Audience Reach</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step"><span>Engagement & Clicks</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step" style="border-left-color: #00ffaa;"><span>Lead Capture</span></div>
+            </div>
+          </div>
+
+          <!-- Flow 3: Content Growth -->
+          <div class="funnel-card">
+            <div class="funnel-header"><i data-lucide="video"></i> Content Growth Funnel</div>
+            <div class="funnel-steps">
+              <div class="funnel-step"><span>Video Content & Reels</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step"><span>Target Audience</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step"><span>Brand Community</span> <span class="funnel-step-arrow">→</span></div>
+              <div class="funnel-step" style="border-left-color: #00ffaa;"><span>Organic Growth</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTIFICATIONS SECTION -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-tag"><i data-lucide="award"></i> Qualifications</div>
+      <h2 class="section-title">Education & Certifications</h2>
+
+      <div class="edu-grid">
+        <!-- Education -->
+        <div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 20px; color: #fff;"><i data-lucide="book-open" style="color: var(--crimson-primary);"></i> Academic Education</h3>
+          
+          <div class="glass-panel" style="padding: 28px; margin-bottom: 20px;">
+            <span style="color: var(--crimson-primary); font-weight: 700; font-size: 0.85rem;">2021</span>
+            <h4 style="font-size: 1.2rem; color: #fff; margin: 6px 0;">B.E – Electrical & Electronics Engineering</h4>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">DMI College of Engineering • Anna University</p>
+          </div>
+
+          <div class="glass-panel" style="padding: 28px;">
+            <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 6px;">C.S.I Goudie Higher Secondary School</h4>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">HSC – Computer Science (76%)</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">SSLC – 327 / 500</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 20px; color: #fff;"><i data-lucide="check-circle-2" style="color: var(--crimson-primary);"></i> Professional Certifications</h3>
+
+          <div class="cert-cards">
+            <div class="cert-card">
+              <div class="cert-badge"><i data-lucide="award"></i></div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff;">Digital Marketing Certification</h4>
+                <p style="font-size: 0.8rem; color: var(--crimson-primary);">Whytap Institute</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-badge"><i data-lucide="compass"></i></div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff;">Industrial Design</h4>
+                <p style="font-size: 0.8rem; color: var(--crimson-primary);">2020</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-badge"><i data-lucide="cpu"></i></div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff;">Battery Designing & Operation</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Technical Training</p>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-badge"><i data-lucide="file-check"></i></div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff;">Digital Marketing Completion</h4>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Advanced Skill Track</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section-padding contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <div class="section-tag"><i data-lucide="message-square"></i> Get In Touch</div>
+        <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; margin-bottom: 12px;">Have a project in mind?</h2>
+        <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 32px;">Let's create something that stands out.</p>
+
+        <!-- Direct Contact Pills -->
+        <div class="contact-info-list">
+          <a href="mailto:chinnudhanush25@gmail.com" class="contact-info-item">
+            <i data-lucide="mail" style="color: var(--crimson-primary);"></i> chinnudhanush25@gmail.com
+          </a>
+          <a href="tel:+919080104624" class="contact-info-item">
+            <i data-lucide="phone" style="color: var(--crimson-primary);"></i> +91 9080104624
+          </a>
+        </div>
+
+        <!-- Interactive Form -->
+        <form id="contact-form" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; text-align: left;">
+          <div>
+            <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Your Name</label>
+            <input type="text" name="name" required placeholder="John Doe" style="width: 100%; padding: 14px 18px; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.05); border: 1px solid var(--crimson-border); color: #fff; outline: none;" />
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Your Email</label>
+            <input type="email" name="email" required placeholder="john@example.com" style="width: 100%; padding: 14px 18px; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.05); border: 1px solid var(--crimson-border); color: #fff; outline: none;" />
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Project Details</label>
+            <textarea name="message" rows="4" required placeholder="Tell me about your campaign, design or video editing needs..." style="width: 100%; padding: 14px 18px; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.05); border: 1px solid var(--crimson-border); color: #fff; outline: none; resize: vertical;"></textarea>
+          </div>
+          <div style="display: flex; gap: 16px; margin-top: 10px;">
+            <button type="submit" class="btn-primary" style="cursor: pointer; flex: 1; justify-content: center;">
+              Send Message <i data-lucide="send"></i>
+            </button>
+            <a href="mailto:chinnudhanush25@gmail.com" class="btn-secondary" style="flex: 1; justify-content: center;">
+              Email Me <i data-lucide="mail"></i>
+            </a>
+          </div>
+          <div id="contact-toast" style="display: none; padding: 14px; border-radius: var(--radius-sm); background: rgba(0, 255, 170, 0.15); border: 1px solid #00ffaa; color: #00ffaa; text-align: center; font-size: 0.9rem; margin-top: 10px;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">PAUL CHINNU</div>
+        <div class="footer-sub">DIGITAL MARKETER • GRAPHIC DESIGNER • VIDEO EDITOR</div>
+      </div>
+      <div style="font-size: 0.85rem; color: var(--text-dim);">
+        © 2026 Paul Chinnu. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL LIGHTBOX FOR PROJECTS -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="modal-content">
+      <button class="modal-close"><i data-lucide="x"></i></button>
+      <div class="modal-body">
+        <img id="modal-img" src="" alt="Project Preview" class="modal-img" />
+        <span id="modal-category" class="portfolio-category">Category</span>
+        <h3 id="modal-title" class="portfolio-title" style="margin-bottom: 12px; font-size: 1.6rem;">Title</h3>
+        <p id="modal-desc" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
