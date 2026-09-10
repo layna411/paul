@@ -12,7 +12,32 @@
   <!-- CSS Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="loading-scroll-lock">
+
+  <!-- FULLSCREEN INTRO / SPLASH SCREEN -->
+  <div id="splash-screen" class="splash-screen">
+    <!-- Fullscreen Hero Image Visual -->
+    <img src="public/assets/paul-hero.jpg" alt="Paul Chinnu Illustration Hero" class="splash-full-img" />
+    <div class="splash-overlay-vignette"></div>
+
+    <!-- Bottom Controls & Loading Bar -->
+    <div class="splash-bottom-bar">
+      <div class="splash-loader-container">
+        <div class="splash-progress-bar">
+          <div class="splash-progress-fill" id="splash-progress-fill"></div>
+        </div>
+        <div class="splash-status-text">
+          <span class="splash-loading-label">LOADING PORTFOLIO...</span>
+          <span class="splash-percent" id="splash-percent">0%</span>
+        </div>
+      </div>
+
+      <button id="splash-enter-btn" class="splash-enter-btn">
+        <span>CLICK TO ENTER</span>
+        <i data-lucide="arrow-right"></i>
+      </button>
+    </div>
+  </div>
 
   <!-- Background Particle Canvas -->
   <canvas id="bg-canvas"></canvas>
@@ -281,7 +306,7 @@
         <!-- 01: Digital Marketing -->
         <div class="service-card" data-title="Digital Marketing" data-category="01" data-desc="Complete digital strategy covering audience research, campaign execution, and multi-channel marketing integration.">
           <div class="service-img-wrapper">
-            <img src="public/assets/service-marketing.jpg" alt="Digital Marketing Service Visual" class="service-img" />
+            <img src="public/assets/Digitalmarketing.png" alt="Digital Marketing Strategy & Analytics Dashboard" class="service-img" />
             <span class="service-num">01</span>
           </div>
           <div class="service-content">
@@ -294,7 +319,7 @@
         <!-- 02: Google Ads -->
         <div class="service-card" data-title="Google Ads" data-category="02" data-desc="Search, Display, & Video ad campaigns built for high ROI and targeted customer acquisition.">
           <div class="service-img-wrapper">
-            <img src="public/assets/service-marketing.jpg" alt="Google Ads Service Visual" class="service-img" />
+            <img src="public/GoogleAds.png" alt="Google Ads Performance & Analytics Dashboard" class="service-img" />
             <span class="service-num">02</span>
           </div>
           <div class="service-content">
@@ -307,7 +332,7 @@
         <!-- 03: Meta Ads -->
         <div class="service-card" data-title="Meta Ads" data-category="03" data-desc="Facebook & Instagram paid campaigns tailored for brand awareness, engagement, and direct conversions.">
           <div class="service-img-wrapper">
-            <img src="public/assets/work-ad.jpg" alt="Meta Ads Service Visual" class="service-img" />
+            <img src="public/assets/metaAds.png" alt="Meta Ads Performance & Campaign Dashboard" class="service-img" />
             <span class="service-num">03</span>
           </div>
           <div class="service-content">
@@ -320,7 +345,7 @@
         <!-- 04: Social Media Marketing -->
         <div class="service-card" data-title="Social Media Marketing" data-category="04" data-desc="Strategic content planning, brand voice development, and organic social community building.">
           <div class="service-img-wrapper">
-            <img src="public/assets/work-ad.jpg" alt="Social Media Marketing Visual" class="service-img" />
+            <img src="public/assets/Social.png" alt="Social Media Marketing & Community Dashboard" class="service-img" />
             <span class="service-num">04</span>
           </div>
           <div class="service-content">
@@ -333,7 +358,7 @@
         <!-- 05: Graphic Design -->
         <div class="service-card" data-title="Graphic Design" data-category="05" data-desc="Eye-catching promotional designs, posters, social media banners, and digital advertising collateral.">
           <div class="service-img-wrapper">
-            <img src="public/assets/service-branding.jpg" alt="Graphic Design Service Visual" class="service-img" />
+            <img src="public/assets/GraphicDesign.png" alt="Graphic Design Studio & Creative Artwork" class="service-img" />
             <span class="service-num">05</span>
           </div>
           <div class="service-content">
@@ -346,7 +371,7 @@
         <!-- 06: Video Editing -->
         <div class="service-card" data-title="Video Editing" data-category="06" data-desc="High-impact promo reels, short-form ad clips, corporate videos, and motion sound design.">
           <div class="service-img-wrapper">
-            <img src="public/assets/work-video.jpg" alt="Video Editing Service Visual" class="service-img" />
+            <img src="public/assets/video.png" alt="Video Editing Service Visual" class="service-img" />
             <span class="service-num">06</span>
           </div>
           <div class="service-content">
@@ -359,7 +384,7 @@
         <!-- 07: Lead Generation -->
         <div class="service-card" data-title="Lead Generation" data-category="07" data-desc="Strategic lead capture funnels, WhatsApp & Email nurture campaigns targeting high-value prospects.">
           <div class="service-img-wrapper">
-            <img src="public/assets/service-marketing.jpg" alt="Lead Generation Service Visual" class="service-img" />
+            <img src="public/assets/Lead.png" alt="Lead Generation Service Visual" class="service-img" />
             <span class="service-num">07</span>
           </div>
           <div class="service-content">
@@ -372,7 +397,7 @@
         <!-- 08: Branding & Creative Content -->
         <div class="service-card" data-title="Branding & Creative Content" data-category="08" data-desc="Complete brand identity elements, logo concepts, typography selection, and cohesive visual guidelines.">
           <div class="service-img-wrapper">
-            <img src="public/assets/service-branding.jpg" alt="Branding & Creative Content Visual" class="service-img" />
+            <img src="public/assets/Branding.png" alt="Branding & Creative Content Visual" class="service-img" />
             <span class="service-num">08</span>
           </div>
           <div class="service-content">
@@ -385,7 +410,7 @@
         <!-- 09: WordPress Websites -->
         <div class="service-card" data-title="WordPress Websites" data-category="09" data-desc="Responsive, fast-loading, SEO-friendly custom WordPress websites built for conversion.">
           <div class="service-img-wrapper">
-            <img src="public/assets/service-marketing.jpg" alt="WordPress Websites Service Visual" class="service-img" />
+            <img src="public/assets/Wordpress.png" alt="WordPress Websites Service Visual" class="service-img" />
             <span class="service-num">09</span>
           </div>
           <div class="service-content">
@@ -416,6 +441,16 @@
 
       <!-- Masonry Gallery -->
       <div class="portfolio-masonry">
+        <!-- Item 0: Digital Marketing Dashboard & Analytics -->
+        <div class="portfolio-card" data-category="ads" data-title="Digital Marketing Strategy & Campaign Dashboard" data-desc="Comprehensive multi-channel digital marketing ecosystem featuring performance tracking, audience analytics, Google & Meta ad conversions, and ROI growth metrics.">
+          <img src="public/assets/D1.png" alt="Digital Marketing Campaign Performance Dashboard" class="portfolio-img" />
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Digital Marketing & Growth</span>
+            <h3 class="portfolio-title">Multi-Channel Digital Marketing Strategy</h3>
+            <span class="portfolio-btn">View Project <i data-lucide="arrow-right"></i></span>
+          </div>
+        </div>
+
         <!-- Item 1: Digital Ad Creative -->
         <div class="portfolio-card" data-category="ads" data-title="Technovate Global Campaign Ad" data-desc="High-impact digital marketing ad poster designed for a tech conference featuring custom 3D geometric visuals and crimson glows.">
           <img src="public/assets/work-ad.jpg" alt="Technovate Ad Creative" class="portfolio-img" />
@@ -467,6 +502,11 @@
       <p class="section-subtitle">Strategic mapping of paid search, social advertising, and content engagement ecosystems.</p>
 
       <div class="funnel-container">
+        <!-- Campaign Funnel Architecture Showcase Banner -->
+        <div class="campaign-hero-banner" style="margin-bottom: 32px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(255, 42, 75, 0.35); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 42, 75, 0.15); transition: transform 0.4s ease;">
+          <img src="public/assets/Funnel.png" alt="Campaign Funnel Architecture - Strategic Mapping" style="width: 100%; height: auto; display: block;" />
+        </div>
+
         <div class="funnel-grid">
           <!-- Flow 1: Google Ads -->
           <div class="funnel-card">
@@ -642,6 +682,18 @@
       </div>
     </div>
   </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919080104624?text=Hi%20Paul,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float" 
+     aria-label="Contact on WhatsApp">
+    <div class="whatsapp-tooltip">Chat on WhatsApp</div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
 
   <!-- Scripts -->
   <script src="main.js"></script>

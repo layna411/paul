@@ -3,6 +3,7 @@
    ------------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initSplashScreen();
   initCustomCursor();
   initCanvasParticles();
   initNavbarScroll();
@@ -13,6 +14,73 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initContactForm();
 });
+
+/* 0. Fullscreen Intro / Splash Screen Controller */
+function initSplashScreen() {
+  const splash = document.getElementById('splash-screen');
+  const progressFill = document.getElementById('splash-progress-fill');
+  const percentText = document.getElementById('splash-percent');
+  const enterBtn = document.getElementById('splash-enter-btn');
+
+  if (!splash) return;
+
+  // Lock scrolling during splash display
+  document.body.classList.add('loading-scroll-lock');
+  window.scrollTo(0, 0);
+
+  let progress = 0;
+  let dismissed = false;
+
+  function dismissSplash() {
+    if (dismissed) return;
+    dismissed = true;
+
+    if (progressFill) progressFill.style.width = '100%';
+    if (percentText) percentText.textContent = '100%';
+
+    splash.classList.add('fade-out');
+
+    setTimeout(() => {
+      document.body.classList.remove('loading-scroll-lock');
+      splash.style.display = 'none';
+    }, 850);
+  }
+
+  // Animated progress counter over ~4 seconds
+  const duration = 4000;
+  const intervalTime = 30;
+  const increment = 100 / (duration / intervalTime);
+
+  const timer = setInterval(() => {
+    if (dismissed) {
+      clearInterval(timer);
+      return;
+    }
+
+    progress += increment;
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(timer);
+      setTimeout(dismissSplash, 400);
+    }
+
+    if (progressFill) progressFill.style.width = `${Math.floor(progress)}%`;
+    if (percentText) percentText.textContent = `${Math.floor(progress)}%`;
+  }, intervalTime);
+
+  // Enter button click listener
+  if (enterBtn) {
+    enterBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dismissSplash();
+    });
+  }
+
+  // Click anywhere on splash to dismiss immediately
+  splash.addEventListener('click', () => {
+    dismissSplash();
+  });
+}
 
 /* 1. Custom Magnetic Cursor */
 function initCustomCursor() {
