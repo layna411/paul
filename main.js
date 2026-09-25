@@ -46,8 +46,8 @@ function initSplashScreen() {
     }, 850);
   }
 
-  // Animated progress counter over ~4 seconds
-  const duration = 4000;
+  // Animated progress counter over ~2 seconds
+  const duration = 2000;
   const intervalTime = 30;
   const increment = 100 / (duration / intervalTime);
 
@@ -61,7 +61,7 @@ function initSplashScreen() {
     if (progress >= 100) {
       progress = 100;
       clearInterval(timer);
-      setTimeout(dismissSplash, 400);
+      setTimeout(dismissSplash, 200);
     }
 
     if (progressFill) progressFill.style.width = `${Math.floor(progress)}%`;

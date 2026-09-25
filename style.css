@@ -1629,6 +1629,8 @@ body.loading-scroll-lock {
   height: 100vh;
   object-fit: cover;
   object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
   transform: scale(1.05);
   animation: splashZoomIn 5.5s ease-out forwards;
 }
