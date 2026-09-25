@@ -46,8 +46,8 @@ function initSplashScreen() {
     }, 850);
   }
 
-  // Animated progress counter over ~2 seconds
-  const duration = 2000;
+  // Animated progress counter over ~2.5 seconds
+  const duration = 2500;
   const intervalTime = 30;
   const increment = 100 / (duration / intervalTime);
 
@@ -226,22 +226,41 @@ function initNavbarScroll() {
 function initMobileNav() {
   const toggleBtn = document.querySelector('.mobile-menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
-  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+  const mobileBackdrop = document.querySelector('.mobile-nav-backdrop');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-cta');
 
   if (!toggleBtn || !mobileNav) return;
 
-  toggleBtn.addEventListener('click', () => {
-    mobileNav.classList.toggle('open');
-    toggleBtn.innerHTML = mobileNav.classList.contains('open') ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    if (mobileBackdrop) mobileBackdrop.classList.remove('active');
+    document.body.classList.remove('nav-open');
+    toggleBtn.innerHTML = '<i data-lucide="menu"></i>';
     if (window.lucide) lucide.createIcons();
+  }
+
+  function openMobileNav() {
+    mobileNav.classList.add('open');
+    if (mobileBackdrop) mobileBackdrop.classList.add('active');
+    document.body.classList.add('nav-open');
+    toggleBtn.innerHTML = '<i data-lucide="x"></i>';
+    if (window.lucide) lucide.createIcons();
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    if (mobileNav.classList.contains('open')) {
+      closeMobileNav();
+    } else {
+      openMobileNav();
+    }
   });
 
+  if (mobileBackdrop) {
+    mobileBackdrop.addEventListener('click', closeMobileNav);
+  }
+
   mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileNav.classList.remove('open');
-      toggleBtn.innerHTML = '<i data-lucide="menu"></i>';
-      if (window.lucide) lucide.createIcons();
-    });
+    link.addEventListener('click', closeMobileNav);
   });
 }
 

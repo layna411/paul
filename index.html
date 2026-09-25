@@ -16,11 +16,12 @@
 
   <!-- FULLSCREEN INTRO / SPLASH SCREEN -->
   <div id="splash-screen" class="splash-screen">
-    <!-- Fullscreen Hero Image Visual -->
-    <img src="public/assets/paul-hero.jpg" alt="Paul Chinnu Illustration Hero" class="splash-full-img" />
+    <picture class="splash-picture">
+      <source media="(max-width: 768px)" srcset="public/assets/paul-hero-mobile.png" />
+      <img src="public/assets/paul-hero.jpg" alt="Paul Chinnu Illustration Hero" class="splash-full-img" />
+    </picture>
     <div class="splash-overlay-vignette"></div>
 
-    <!-- Bottom Controls & Loading Bar -->
     <div class="splash-bottom-bar">
       <div class="splash-loader-container">
         <div class="splash-progress-bar">
@@ -38,6 +39,7 @@
       </button>
     </div>
   </div>
+ 
 
   <!-- Background Particle Canvas -->
   <canvas id="bg-canvas"></canvas>
@@ -80,8 +82,9 @@
     <a href="#work" class="mobile-nav-link">Work</a>
     <a href="#campaigns" class="mobile-nav-link">Campaigns</a>
     <a href="#contact" class="mobile-nav-link">Contact</a>
-    <a href="#contact" class="nav-cta" style="margin-top: 20px; text-align: center;">Let's Talk</a>
+    <a href="#contact" class="nav-cta mobile-nav-cta">Let's Talk</a>
   </div>
+  <div class="mobile-nav-backdrop"></div>
 
   <!-- HERO SECTION -->
   <section id="home" class="hero-section">
@@ -643,11 +646,11 @@
             <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Project Details</label>
             <textarea name="message" rows="4" required style="width: 100%; padding: 14px 18px; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.05); border: 1px solid var(--crimson-border); color: #fff; outline: none; resize: vertical;"></textarea>
           </div>
-          <div style="display: flex; gap: 16px; margin-top: 10px;">
-            <button type="submit" class="btn-primary" style="cursor: pointer; flex: 1; justify-content: center;">
+          <div class="form-button-group">
+            <button type="submit" class="btn-primary">
               Send Message <i data-lucide="send"></i>
             </button>
-            <a href="mailto:chinnudhanush25@gmail.com" class="btn-secondary" style="flex: 1; justify-content: center;">
+            <a href="mailto:chinnudhanush25@gmail.com" class="btn-secondary">
               Email Me <i data-lucide="mail"></i>
             </a>
           </div>
